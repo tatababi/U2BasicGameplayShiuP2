@@ -442,7 +442,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: -1
   m_CullingMask:
@@ -685,7 +685,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1645111223}
-  - component: {fileID: 1645111222}
+  - component: {fileID: 1645111224}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -693,22 +693,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1645111222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645111221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d738f6e29cdbfb346b41b878cecb0634, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animalPrefabs:
-  - {fileID: 3101970773505969764, guid: dc6ab52cb180a4344b2bed3af44ab8b3, type: 3}
-  - {fileID: 7689182908903108669, guid: f75f52309d0964b4b85eedd4af8982e7, type: 3}
-  - {fileID: 8553158510536868572, guid: 48c27e690d5d200449d66bd6aba5d69c, type: 3}
 --- !u!4 &1645111223
 Transform:
   m_ObjectHideFlags: 0
@@ -724,6 +708,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1645111224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645111221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d738f6e29cdbfb346b41b878cecb0634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 8553158510536868572, guid: 48c27e690d5d200449d66bd6aba5d69c, type: 3}
+  - {fileID: 7689182908903108669, guid: f75f52309d0964b4b85eedd4af8982e7, type: 3}
+  - {fileID: 3101970773505969764, guid: dc6ab52cb180a4344b2bed3af44ab8b3, type: 3}
 --- !u!1001 &1994336889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -849,6 +849,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3862120471726246754, guid: 48c27e690d5d200449d66bd6aba5d69c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2736530262757859842, guid: 48c27e690d5d200449d66bd6aba5d69c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.18
@@ -859,7 +863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2736530262757859842, guid: 48c27e690d5d200449d66bd6aba5d69c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.34
+      value: 13.72
       objectReference: {fileID: 0}
     - target: {fileID: 2736530262757859842, guid: 48c27e690d5d200449d66bd6aba5d69c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -910,6 +914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal_Moose_02
       objectReference: {fileID: 0}
+    - target: {fileID: 3842875221049274610, guid: dc6ab52cb180a4344b2bed3af44ab8b3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6437401448061675466, guid: dc6ab52cb180a4344b2bed3af44ab8b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.3133144
@@ -920,7 +928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6437401448061675466, guid: dc6ab52cb180a4344b2bed3af44ab8b3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.62
+      value: 13.8
       objectReference: {fileID: 0}
     - target: {fileID: 6437401448061675466, guid: dc6ab52cb180a4344b2bed3af44ab8b3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -963,6 +971,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6423355735317137455, guid: f75f52309d0964b4b85eedd4af8982e7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5809681570559266492, guid: f75f52309d0964b4b85eedd4af8982e7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.5
@@ -973,7 +985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5809681570559266492, guid: f75f52309d0964b4b85eedd4af8982e7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.732933
+      value: 13.48
       objectReference: {fileID: 0}
     - target: {fileID: 5809681570559266492, guid: f75f52309d0964b4b85eedd4af8982e7, type: 3}
       propertyPath: m_LocalRotation.w
