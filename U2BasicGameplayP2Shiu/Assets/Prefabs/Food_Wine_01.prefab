@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1069736391668816578}
   - component: {fileID: 4154944008663489374}
   - component: {fileID: 1043624561949568158}
+  - component: {fileID: 8212703594981328142}
   m_Layer: 0
   m_Name: Food_Wine_01
   m_TagString: Untagged
@@ -146,8 +147,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.24241088, y: 0.9589979, z: 0.24241088}
-  m_Center: {x: 0, y: -0.000000059604645, z: 0}
+  m_Size: {x: 0.86822486, y: 0.9589979, z: 0.24241088}
+  m_Center: {x: -0.0063567758, y: -0.000000059604645, z: 0}
 --- !u!114 &1043624561949568158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,5 +159,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b368b607576bb1f448abcbdf1634c5fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8212703594981328142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4346332341438506577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26081ca4839e41f418c96e02ac4b6741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
