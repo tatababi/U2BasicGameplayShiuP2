@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.Rendering;
 
 
+
 public class PlayerController : MonoBehaviour
 {
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +22,8 @@ public class PlayerController : MonoBehaviour
     public float zRange = 15;
     public float zRangeTop = 15;
     public float zRangeBottom = 0;
+   
+   
 
     public GameObject projectilePrefab;
     // Update is called once per frame
@@ -57,11 +63,17 @@ public class PlayerController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
 
+        
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //Launch a propkectile from the player
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
+       
+
+        
 
     }
 }
+
